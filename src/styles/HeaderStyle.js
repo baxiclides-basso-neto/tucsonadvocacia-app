@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import HeaderBackgroundImg from "../../public/headerbgImg.jpg"
+import HeaderBackgroundImg from "../../public/headerbgImg.jpg";
 
 export const HeaderWrapper = styled.div`
   position: relative;
@@ -48,7 +48,6 @@ export const LogoSection = styled.section`
   align-items: center;
 `;
 
-
 export const LogoText = styled.h1`
   font-size: 2.4rem;
   font-weight: bold;
@@ -77,35 +76,47 @@ export const SubTitle = styled.p`
 
 export const ContactButton = styled.button`
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 300px;
-  height: 4rem;
-  padding: 1rem;
-  border-radius: 5px;
+  justify-content: center;
+  width: 90%;
+  max-width: 320px;
+  width: 320px;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-bottom: 3rem;
+  padding: 0.5rem;
+  border-radius: 4px;
   border: none;
-  background-color: #007bff;
+  background-color: #25d366;
   color: #fff;
-  font-size: 1.6rem;
   font-weight: bold;
-  text-align: center;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
 
-  div {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  &:hover {
+    transform: scale(1.2);
+    animation-name: growAndShrink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: #fff;
+    color: #25d366;
+    border: 1px solid #25d366;
+    cursor: pointer;
   }
 
-  &:hover {
-    transform: scale(1.05);
-    transform-origin: center;
-    background-color: #0062cc;
-    cursor: pointer;
+  @keyframes growAndShrink {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
   }
 `;
 
 export const ContactButtonIcon = styled(Image)`
   margin-right: 1rem;
+  filter: invert(1);
 `;

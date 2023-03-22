@@ -23,8 +23,7 @@ const HeaderComponent = () => {
         </LogoSection>
         <HeaderDescSection>
           <Title>
-            Você sabe quais são seus direitos na rescisão do contrato de
-            trabalho?
+            Advogados Trabalhistas
           </Title>
           <SubTitle>
             Você sabia que pode ter verbas rescisórias a receber?
@@ -33,10 +32,10 @@ const HeaderComponent = () => {
             <ContactButtonIcon
               src="whatsapp.svg"
               alt="WhatsApp Icon"
-              width={30}
-              height={30}
+              width={20}
+              height={20}
             />
-            Fale conosco agora
+            Fale conosco pelo WhatsApp
           </ContactButton>
         </HeaderDescSection>
       </HeaderContent>
