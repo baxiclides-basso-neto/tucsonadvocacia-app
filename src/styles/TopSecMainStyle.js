@@ -56,7 +56,7 @@ export const LegalDecisionsBox = styled.div`
   }
 `;
 export const BottomSecBtnBox = styled.button`
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 90%;

@@ -4,7 +4,9 @@ import HeaderBackgroundImg from "../../public/headerbgImg.jpg";
 
 export const HeaderWrapper = styled.div`
   position: relative;
+  min-height: 100vh;
 `;
+
 
 export const BackgroundImage = styled.div`
   position: absolute;
@@ -13,6 +15,10 @@ export const BackgroundImage = styled.div`
   width: 100%;
   height: 100%;
   z-index: -1;
+  background: url(${HeaderBackgroundImg.src});
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
 
   &::before {
     content: "";
@@ -24,10 +30,6 @@ export const BackgroundImage = styled.div`
     background-color: rgba(0, 0, 0, 0.75);
     z-index: -1;
   }
-
-  background: url(${HeaderBackgroundImg.src});
-  background-size: cover;
-  background-position: center right;
 `;
 
 export const HeaderContent = styled.div`
