@@ -1,9 +1,10 @@
 import React from 'react'
+import TopSecMain from './TopSecMain'
 
-const Main = () => {
+const MainComponent = () => {
   return (
-    <div>Main</div>
+    <TopSecMain/>
   )
 }
 
-export default Main
+export default MainComponent

@@ -23,7 +23,7 @@ const HeaderComponent = () => {
         </LogoSection>
         <HeaderDescSection>
           <Title>
-            Advogados Trabalhistas
+            Saiu da empresa?
           </Title>
           <SubTitle>
             Você sabia que pode ter verbas rescisórias a receber?
