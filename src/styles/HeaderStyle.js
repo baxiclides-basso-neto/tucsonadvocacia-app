@@ -4,7 +4,7 @@ import HeaderBackgroundImg from "../../public/headerbgImg.jpg";
 
 export const HeaderWrapper = styled.div`
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
 `;
 
 
@@ -40,9 +40,13 @@ export const HeaderContent = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 1rem 0.5rem;
+  padding: 2rem 0.5rem;
   box-sizing: border-box;
   color: #fff;
+
+  @media (min-width: 769px){
+    padding-top: 5rem;
+  }
 `;
 
 export const LogoSection = styled.section`

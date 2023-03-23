@@ -70,36 +70,38 @@ const BottomSecMain = () => {
               </div>
             </Card>
           ))}
+          <ContactButton>
+            <ContactButtonIcon
+              src="whatsapp.svg"
+              alt="WhatsApp Icon"
+              width={20}
+              height={20}
+            />
+            Fale conosco pelo WhatsApp
+          </ContactButton>
         </CardWrapper>
-        <ContactButton>
-          <ContactButtonIcon
-            src="whatsapp.svg"
-            alt="WhatsApp Icon"
-            width={20}
-            height={20}
-          />
-          Fale conosco pelo WhatsApp
-        </ContactButton>
       </Section>
 
       <AboutSection>
         <AboutTitle>Sobre nós</AboutTitle>
-        <AboutImage
-          src="/escritório.jpg"
-          alt="Foto do escritório"
-          width={300}
-          height={200}
-        />
-        <AboutDescription>
-          Somos um escritório altamente especializado em Direito Trabalhista,
-          com expertise em oferecer serviços de consultoria e assessoria
-          jurídica para empresas e trabalhadores em todas as áreas do Direito do
-          Trabalho. Atuamos em diversos aspectos trabalhistas, incluindo
-          contratação, rescisão, férias, horas extras, acidentes de trabalho,
-          entre outros. Nossa missão é defender os direitos dos nossos clientes
-          com dedicação e comprometimento, sempre oferecendo soluções eficazes e
-          personalizadas para cada caso.{" "}
-        </AboutDescription>
+        <div>
+          <AboutImage
+            src="/escritório.jpg"
+            alt="Foto do escritório"
+            width={300}
+            height={200}
+          />
+          <AboutDescription>
+            Somos um escritório altamente especializado em Direito Trabalhista,
+            com expertise em oferecer serviços de consultoria e assessoria
+            jurídica para empresas e trabalhadores em todas as áreas do Direito do
+            Trabalho. Atuamos em diversos aspectos trabalhistas, incluindo
+            contratação, rescisão, férias, horas extras, acidentes de trabalho,
+            entre outros. Nossa missão é defender os direitos dos nossos clientes
+            com dedicação e comprometimento, sempre oferecendo soluções eficazes e
+            personalizadas para cada caso.{" "}
+          </AboutDescription>
+        </div>
       </AboutSection>
     </>
   );

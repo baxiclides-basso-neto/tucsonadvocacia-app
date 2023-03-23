@@ -13,10 +13,6 @@ export const CardWrapper = styled.div`
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
 `;
 
 export const Card = styled.div`
@@ -58,6 +54,7 @@ export const ContactButton = styled.button`
   width: 320px;
   height: 3rem;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   margin-left: 0;
   padding: 0.5rem;
   border-radius: 4px;
@@ -102,6 +99,15 @@ export const AboutSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (min-width: 769px) {
+    > div {
+      display: flex;
+      gap: 3%;
+    }
+  }
 `;
 
 export const AboutTitle = styled.h2`
@@ -114,11 +120,22 @@ export const AboutDescription = styled.p`
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: justify;
-  max-width: 800px;
   margin-bottom: 2rem;
+
+  @media (min-width: 769px) {
+    width: 40%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
 `;
 
 export const AboutImage = styled(Image)`
- 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+
+  @media (min-width: 769px) {
+    width: 55%;
+    height: 40%;
+  }
 `;

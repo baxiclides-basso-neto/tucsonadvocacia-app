@@ -1,46 +1,71 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-export const BottomSection = styled.section`
+export const TopSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 `;
 
-export const QuestionsBox = styled.div`
-  background-color: #f8f8f8;
+export const QuestionsBox = styled.section`
   color: #006400;
   border-radius: 4px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   width: 100%;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  background-color: #f8f8f8;
+  text-align: center;
 
-  > h1 {
-    text-align: center;
-  }
+  > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
 
-  div {
-    padding: 1rem;
-    padding-bottom: 1.5rem;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-    min-height: 40px;
-
-    &:hover {
-      cursor: pointer;
+    > h1 {
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
-    > span {
-      margin-right: 0.5rem;
-      font-weight: bold;
+    > h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    hr {
+      width: 8rem;
+      margin-bottom: 2rem;
+      color: #006400;
+      border-top: 3px solid #006400;
+    }
+
+    div {
+      position: relative;
+      padding-bottom: rem;
+      min-height: 50px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      > span {
+        margin-right: 0.5rem;
+        font-weight: bold;
+      }
+
+      > p {
+        text-align: justify;
+      }
     }
   }
 `;
 
 export const LegalDecisionsBox = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
   > h1 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
     color: #006400;
   }
@@ -63,9 +88,9 @@ export const BottomSecBtnBox = styled.button`
   max-width: 320px;
   width: 320px;
   height: 3rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 3.2rem;
   padding: 0.5rem;
   border-radius: 4px;
   border: none;

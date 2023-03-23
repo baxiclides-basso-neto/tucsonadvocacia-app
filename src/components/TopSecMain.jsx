@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import {
-  BottomSection,
+  TopSection,
   BottomSecBtnBox,
   LegalDecisionsBox,
   QuestionsBox,
   ContactButtonIcon,
 } from "@/styles/TopSecMainStyle";
 
-const TopSecHeader = () => {
+const TopSecMain = () => {
   const [showSection1, setShowSection1] = useState(false);
   const [showSection2, setShowSection2] = useState(false);
   const [showSection3, setShowSection3] = useState(false);
@@ -16,51 +16,59 @@ const TopSecHeader = () => {
   const toggleSection2 = () => setShowSection2(!showSection2);
   const toggleSection3 = () => setShowSection3(!showSection3);
   return (
-    <BottomSection>
+    <TopSection>
       <QuestionsBox>
-        <h1>DÚVIDAS?</h1>
-        <h1>PERGUNTAS FREQUENTES</h1>
-        <div onClick={toggleSection1}>
-          <span>{showSection1 ? "-" : "+"}</span>
-          <span>Como faço para receber os valores?</span>
-          {showSection1 && (
-            <p>
-              Para receber as verbas rescisórias que não foram pagas, é
-              necessário ingressar com um processo judicial. Trata-se de uma
-              Ação de Cobrança contra a empresa pedindo a restituição dos
-              valores devidos. É importante buscar orientação de um advogado
-              especializado em Direito do Trabalho para entender quais são os
-              direitos e como proceder nesses casos.
-            </p>
-          )}
-        </div>
-        <div onClick={toggleSection2}>
-          <span>{showSection2 ? "-" : "+"}</span>
-          <span>Qual o valor que tenho pra receber?</span>
-          {showSection2 && (
-            <p>
-              O valor pode variar de acordo com diversos fatores, como o tempo
-              de serviço prestado, o salário recebido, a causa da rescisão do
-              contrato de trabalho e outros. É importante que você consulte um
-              advogado especializado em direito trabalhista para avaliar o seu
-              caso e determinar o valor a que você tem direito.
-            </p>
-          )}
-        </div>
-        <div onClick={toggleSection3}>
-          <span>{showSection3 ? "-" : "+"}</span>
-          <span>
-            Quais são as verbas rescisórias que eu deveria ter recebido?
-          </span>
-          {showSection3 && (
-            <p>
-              No geral, as principais verbas são: saldo de salário, aviso
-              prévio, férias proporcionais acrescidas de 1/3, 13º salário
-              proporcional e a multa do Fundo de Garantia do Tempo de Serviço
-              (FGTS) com acréscimo de 40%. Outras verbas podem incluir horas
-              extras, adicional noturno, comissões, entre outras.
-            </p>
-          )}
+        <div>
+          <h1>DÚVIDAS?</h1>
+          <h2>PERGUNTAS FREQUENTES</h2>
+          <hr />
+          <div>
+            <div onClick={toggleSection1}>
+              <span>{showSection1 ? "-" : "+"}</span>
+              <span>Como faço para receber os valores?</span>
+              {showSection1 && (
+                <p>
+                  Para receber as verbas rescisórias que não foram pagas, é
+                  necessário ingressar com um processo judicial. Trata-se de uma
+                  Ação de Cobrança contra a empresa pedindo a restituição dos
+                  valores devidos. É importante buscar orientação de um advogado
+                  especializado em Direito do Trabalho para entender quais são
+                  os direitos e como proceder nesses casos.
+                </p>
+              )}
+            </div>
+            <div onClick={toggleSection2}>
+              <span>{showSection2 ? "-" : "+"}</span>
+              <span>Qual o valor que tenho pra receber?</span>
+              {showSection2 && (
+                <p>
+                  O valor pode variar de acordo com diversos fatores, como o
+                  tempo de serviço prestado, o salário recebido, a causa da
+                  rescisão do contrato de trabalho e outros. É importante que
+                  você consulte um advogado especializado em direito trabalhista
+                  para avaliar o seu caso e determinar o valor a que você tem
+                  direito.
+                </p>
+              )}
+            </div>
+
+            <div onClick={toggleSection3}>
+              <span>{showSection3 ? "-" : "+"}</span>
+              <span>
+                Quais são as verbas rescisórias que eu deveria ter recebido?
+              </span>
+              {showSection3 && (
+                <p>
+                  No geral, as principais verbas são: saldo de salário, aviso
+                  prévio, férias proporcionais acrescidas de 1/3, 13º salário
+                  proporcional e a multa do Fundo de Garantia do Tempo de
+                  Serviço (FGTS) com acréscimo de 40%. Outras verbas podem
+                  incluir horas extras, adicional noturno, comissões, entre
+                  outras.
+                </p>
+              )}
+            </div>
+          </div>
         </div>
       </QuestionsBox>
       <LegalDecisionsBox>
@@ -106,8 +114,8 @@ const TopSecHeader = () => {
         />
         Fale conosco agora pelo WhatsApp
       </BottomSecBtnBox>
-    </BottomSection>
+    </TopSection>
   );
 };
 
-export default TopSecHeader;
+export default TopSecMain;
