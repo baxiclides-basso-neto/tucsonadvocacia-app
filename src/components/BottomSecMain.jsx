@@ -98,7 +98,7 @@ const BottomSecMain = () => {
           contratação, rescisão, férias, horas extras, acidentes de trabalho,
           entre outros. Nossa missão é defender os direitos dos nossos clientes
           com dedicação e comprometimento, sempre oferecendo soluções eficazes e
-          personalizadas para cada caso.
+          personalizadas para cada caso.{" "}
         </AboutDescription>
       </AboutSection>
     </>
@@ -106,4 +106,3 @@ const BottomSecMain = () => {
 };
 
 export default BottomSecMain;
-

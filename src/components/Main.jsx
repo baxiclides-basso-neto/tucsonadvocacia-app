@@ -1,11 +1,14 @@
-import React from 'react'
-import BottomSecMain from './BottomSecMain'
-import TopSecMain from './TopSecMain'
+import React from "react";
+import BottomSecMain from "./BottomSecMain";
+import TopSecMain from "./TopSecMain";
 
 const MainComponent = () => {
   return (
-    <><TopSecMain /><BottomSecMain /></>
-  )
-}
+    <>
+      <TopSecMain />
+      <BottomSecMain />
+    </>
+  );
+};
 
-export default MainComponent
+export default MainComponent;
