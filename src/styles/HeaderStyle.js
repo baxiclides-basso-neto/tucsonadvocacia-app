@@ -7,7 +7,6 @@ export const HeaderWrapper = styled.div`
   min-height: 90vh;
 `;
 
-
 export const BackgroundImage = styled.div`
   position: absolute;
   top: 0;
@@ -44,7 +43,7 @@ export const HeaderContent = styled.div`
   box-sizing: border-box;
   color: #fff;
 
-  @media (min-width: 769px){
+  @media (min-width: 769px) {
     padding-top: 5rem;
   }
 `;
